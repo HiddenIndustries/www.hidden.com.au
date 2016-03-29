@@ -42,7 +42,7 @@ h4 {
 .hero {
   background-image: url('../images/sydney_skyline.jpg');
   background-size: cover;
-  background-color: darkblue;
+  background-color: #3d7bbf;
 }
 
 #logotype {
