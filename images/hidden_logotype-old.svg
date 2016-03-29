@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0" y="0" width="481.89" height="141.732" viewBox="0, 0, 481.89, 141.732">
+    <g id="logotype_white_shadow" opacity="0.421">
+      <title>Hidden Industries logotype</title>
+      <text transform="matrix(1, 0, 0, 1, 234.589, 95.236)">
+        <tspan x="-114.082" y="-16" font-family="ArialMT" font-size="72" fill="#000000">Hidden</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 326.617, 165.643)">
+        <tspan x="-156.076" y="-20" font-family="ArialMT" font-size="72" fill="#000000">Industries</tspan>
+      </text>
+      <path d="M181.042,42.426 L181.042,145.232" fill-opacity="0" stroke="#000000" stroke-width="7"/>
+    </g>
+    <g id="logotype_white">
+      <text transform="matrix(1, 0, 0, 1, 231.589, 86.296)">
+        <tspan x="-114.082" y="-10.06" font-family="ArialMT" font-size="72" fill="#FFFFFF">Hidden</tspan>
+      </text>
+      <text transform="matrix(1, 0, 0, 1, 323.617, 162.643)">
+        <tspan x="-156.076" y="-20" font-family="ArialMT" font-size="72" fill="#FFFFFF">Industries</tspan>
+      </text>
+      <path d="M178.042,39.426 L178.042,142.232" fill-opacity="0" stroke="#FFFFFF" stroke-width="7"/>
+    </g>
+</svg>

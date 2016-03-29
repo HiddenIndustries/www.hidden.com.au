@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                        Welcome to...
+
+    ##    ##  ##  ######   ######   ######  ####    ##
+    ##    ##  ##  ##   ##  ##   ##  ##      ## ##   ##
+    ########  ##  ##   ##  ##   ##  ####    ##  ##  ##
+    ##    ##  ##  ##   ##  ##   ##  ##      ##   ## ##
+    ##    ##  ##  ######   ######   ######  ##    ####.com.au
+
+
+    Hidden Industries
+    ABN# 23 612 417 465
+
+    email: hidden@hidden.com.au
+
+    Please feel free to read my source code
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->
+<head>
+
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>Hidden Industries</title>
+  <meta name="description" content="Hidden Industries connects you to the technology, digital services and support needed for success. If you have a web or IT related challenge, we can help.">
+  <meta name="author" content="Bill Rafferty">
+
+<!-- Additional less important meta tags -->
+  <meta name="keywords" content="hidden, web, IT, digital services, Support, Hidden Industries, consultancy, developer, startup">
+  <meta name="robots" content="index, follow">
+  <meta name="revisit-after" content="1 week">
+  <meta name="reply-to" content="public@hidden.com.au">
+  <meta name="language" content="english">
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT  N.B. relative URL '//' without a scheme e.g. (http: or https:) is valid and means it will work online via https or http but generally not locally -->
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700|Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/hidden.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-59741288-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script>
+		$(function() {
+			$("<pre />", {
+				"html":   '&lt;!DOCTYPE html>\n&lt;html>\n' +
+						$("html")
+							.html()
+							.replace(/[<>]/g, function(m) { return {'<':'&lt;','>':'&gt;'}[m]})
+							.replace(/((ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?)/gi,'<a href="$1">$1</a>') +
+						'\n&lt;/html>',
+				"class": "prettyprint"
+			}).appendTo("#source-code");
+
+			prettyPrint();
+		});
+	</script>
+  <!-- Favicon overkill set -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="images/favicon/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Primary Page Layout -->
+  <!-- Navigation -->
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                  <i class="fa fa-bars">Nav</i>
+              </button>
+              <a class="navbar-brand page-scroll" href="#page-top">
+                  <i class="fa"><img src="images/hidden_logo.svg" width="60px" alt="Hidden Industries Logo"></i>
+              </a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+              <ul class="nav navbar-nav">
+                  <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                  <li class="hidden">
+                      <a href="#page-top"></a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#home">Home</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#contact">Contact</a>
+                  </li>
+              </ul>
+          </div>
+          <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+  </nav>
+  <!-- Top of page -->
+<section id="home" class="hero">
+  <div class="container">
+    <div class="row">
+        <img id="logotype" src="images/hidden_logotype.svg" alt="Hidden Industries Logotype">
+    </div>
+  </div>
+</section>
+<section id="tagline">
+  <div class="container">
+    <div class="row">
+        <p class="callout">Hidden Industries connects you to the technology, digital services and support needed for success.</p>
+    </div>
+  </div>
+</section>
+<section id="contact">
+  <div class="container">
+    <div class="one-third column">
+    <h4>Experienced</h4>
+    <p>With over 15 years industry experience, we draw on a huge knowledge base. It's vital for business to be adapatable and adopt new technologies without being swept up in hype. </p>
+    </div>
+    <div class="one-third column">
+    <h4>Honest</h4>
+    <p>As an independent agency, Hidden Industries will examine all available options and connect you with the one that is right for you. The goal is simply satisfied clients using the right technologies and services.</p>
+    </div>
+    <div class="one-third column">
+    <h4>Connected</h4>
+    <p>To get value from your network you need to have confidence and proven reliability. This is true for both digital assets and the people and organsiations you work with. We build both.</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="one-third column"><a href="mailto:public@hidden.com.au" class="email">public@hidden.com.au</a></div>
+    <div class="one-third column"><a href="tel:0455722811" class="phone">Call: 0455722811</a></div>
+    <div class="one-third column"><a href="https://www.linkedin.com/" class="linkedin">LinkedIn</a></div>
+  </div>
+  <div class="container">
+    <div class="u-full-width">
+      <br/><br/><br/>
+      <h3>We deliver solutions, not sales pitches.</h3>
+      <p>To find out if we are the right fit simply get intouch.</p>
+    </div>
+  </div>
+  <form autocomplete="on">
+    <div class="container">
+      <div class="five columns">
+            <label for="email">Your email</label>
+            <input class="u-full-width" type="email" placeholder="your@domain.com" id="exampleEmailInput" required>
+      </div>
+      <div class="seven columns">
+        <label for="emailreason">Reason for contacting</label>
+        <select class="u-full-width" id="mailreason">
+          <option value="Option 1">Questions</option>
+          <option value="Option 2">Admiration</option>
+          <option value="Option 3">Can I get your number?</option>
+        </select>
+      </div>
+      <label for="Message">Message</label>
+      <textarea class="u-full-width" placeholder="I'd like to meetup..." id="exampleMessage"></textarea>
+      <label class="example-send-yourself-copy">
+        <input type="checkbox">
+        <span class="label-body">Send a copy to yourself</span>
+      </label>
+      <input class="button-primary" type="submit" value="Send">
+    </div>
+  </form>
+</section>
+<section id="footer" class="footer">
+  <div class="row">
+    <div class="u-full-width">
+      <p>Hidden Industries ABN:23 612 417 465&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#page-top">Top of page</a> | <a href="#source-code" id="view-source">Sourcecode</a></p>
+        <div id="source-code">
+			  <a href="#" id="x"><img src="images/close.svg" height="45" width="45" alt="close"></a>
+		    </div>
+    </div>
+  </div>
+</section>
+
+<!-- End Document
+    Credits;
+
+    Site boilerplate based on Skeleton by [Dave Gamache]( https://twitter.com/dhg ). Check out < http://getskeleton.com > for documentation and details.
+    The main font used is the 'Oxygen' typeface family created as part of the KDE Project by [Vernon Adams]. I'm also using Inconsolata by [Raph Levien] for monospace (fixed width) code snipets. Both come under the SIL Open Font License, 1.1 and served via Google Fonts.
+    Most of the graphics made in Autodesk Graphic http://graphic.com and hand coded. Also used Pixelmator for hero background comp http://www.pixelmator.com/mac/ because its' great and PS CC subscriptions blow hard. Also optimised graphics via http://www.jpegmini.com/ and https://tinypng.com
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+<!--
+    Micro Blog
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~¬
+    22nd, March 2016:
+    Relaunching the site to promote Hidden Industries. I thought
+    Long and hard about removing or editing down the source code
+    'micro' blog to make the corperate site more professional
+    and kept the page weight as lean as possible. I've decided
+    to keep it as it's been a ongoing part of this site for the
+    last 5263 days and perminency on the web is rare. Also this
+    source code is generally hidden, but also right there for
+    anyone to see. This was a factor for the original domain
+    and business name.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~¬
+    30th, June 2015:
+    So just a few days ago github released atom.io and I'm
+    already a big fan, and might even be depricating Vim soon
+    or at least reducing its usage when coding.
+    Also starting a new enterprise in my work life and spending
+    some time at a fantasic not for profit coworking space
+    called fishburners.org
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~¬
+    9th, Febuary 2015:
+    Well this is embarising. Long time between updates. That
+    said I've been a busy boy and played with a lot of tech
+    and I don't mind that most of it has not been visible
+    on my little conner of the web. Check out my social sites
+    or blog.hidden.com.au for more. This update is just
+    playing with GitHub Pages. Hopefully more to come sooner
+    than the last update...
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    6th, June 2012:
+    Wow, long time between site work. I remember being a
+    young enthusiactic web developer and now I've lived
+    a great life, have a beautiful wife and son and now
+    time to have some fun with my domain and get back to
+    work and actually build "DA UBER SITE", LoL I
+    was a geek, time to get back there.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    11th, Febuary 2012:
+    Moved my domain to rackspace and loving it. Have
+    got my site running on my companies web content
+    managment system Squiz Matrix v4.6.3 and loving it.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    15th, Febuary 2002:
+    Moved to a new server, want to get some ASP action!
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    19th, December 2001: Not an update but a very cool
+    script from http://www.pupius.net.
+    Will only work in IE4-6 but it looks great.
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    3rd, December 2001:
+    I realy need some time off to get the site up and
+    running. We can Call this page "da alpha site",
+    I hope to have "da beta site" up by Jan 2002.
+    This will be tested and once given the OK, will
+    become "da site".
+    And depending on user feedback I will upgrade and
+    make "DA UBER SITE". Can you fell the excitement!?
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    24th, October 2001:
+    I just got this domain the other day and havn't put
+    anything up yet, but soon hope to have something
+    worthy.
+    If you have any comments or sugestions you can email
+    me at:_-_hidden@hidden.com.au_-_ but please no Spam!
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-->
+</html>

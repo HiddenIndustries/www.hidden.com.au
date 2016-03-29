@@ -1,0 +1,269 @@
+/*
+* Customisation ontop of Skeleton V2.0.4
+* Copyright 2016, Bill Rafferty
+* www.hidden.com.au
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*/
+
+/* Globals */
+body {
+  font-family: "Oxygen", "Open Sans", sans-serif;
+}
+
+code {
+  font-family: "Inconsolata", Courier, MonoSpace;
+}
+
+body a {
+  color: #222;
+}
+body a:hover {
+  color: #3d7bbf;
+}
+
+h4 {
+  text-align: center;
+  color: #222;
+}
+
+.button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
+  border-radius: 3px;
+  color: #222;
+  background-color: #fff;
+  border-color: #000;
+}
+.button.button-primary:hover , button.button-primary:hover , input[type="submit"].button-primary:hover , input[type="reset"].button-primary:hover , input[type="button"].button-primary:hover  {
+  color: #fff;
+  background-color: #3d7bbf;
+  border-color: #222;
+}
+
+.hero {
+  background-image: url('../images/sydney_skyline.jpg');
+  background-size: cover;
+  background-color: darkblue;
+}
+
+#logotype {
+    position: relative;
+    bottom: -11px;
+    width: 80%;
+}
+.callout {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.footer {
+  white-space: nowrap;
+  /*background-size: cover;*/
+  background-color: #222;
+  text-align: right;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.footer a {
+    text-decoration: none;
+    margin-right: .9rem;
+    margin-left: .9rem;
+    color: white;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+
+}
+
+.email {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.phone {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.linkedin {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+  .footer {
+    padding: .7rem 0 25rem;
+  }
+  .callout {
+    font-size: 2rem;
+  }
+  .email {
+    text-indent: -9999px;
+    background: url(../images/email.svg);
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+  }
+  .phone {
+    text-indent: -9999px;
+    background: url(../images/cellphone.svg);
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+  }
+  .linkedin {
+    text-indent: -9999px;
+    background: url(../images/linkedin.svg);
+    background-size: 50px 50px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+  .footer {
+    padding: .7rem 0 20rem;
+  }
+  .callout {
+    font-size: 2.6rem;
+  }
+  .email {
+    background-size: 70px 70px;
+    width: 70px;
+    height: 70px;
+  }
+  .phone {
+    background-size: 70px 70px;
+    width: 70px;
+    height: 70px;
+  }
+  .linkedin {
+    background-size: 70px 70px;
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+  .callout {
+    font-size: 2.9rem;
+  }
+  .email {
+    background-size: 90px 90px;
+    width: 90px;
+    height: 90px;
+  }
+  .phone {
+    background-size: 90px 90px;
+    width: 90px;
+    height: 90px;
+  }
+  .phone {
+  background-size: 90px 90px;
+  width: 90px;
+  height: 90px;
+  }
+}
+
+
+ /* CSS Code for view source button by CHRIS COYIER */
+ #source-code { display: none; position: fixed; font-size: 1.7rem; top: 0; left: 0; width: 100%; height: 100%; background: rgba(255,255,255,0.8); font-family: "Inconsolata", Courier, MonoSpace; z-index: 10; text-align: left;}
+ #source-code:target { display: block; }
+ #source-code pre { padding: 20px; font-family: Inconsolata, Courier, MonoSpace; margin: 50px auto; background: rgba(0,0,0,0.8); color: #00CC00; width: 80%; height: 80%; overflow: auto; }
+ #source-code pre a, #source-code pre a span { text-decoration: none; color: lightgreen; font-size: 1.7rem;}
+ #x { position: absolute; top: 28px; left: 10%; margin-left: -42px;}
+
+/*Navbar for site */
+nav {
+  position: fixed;
+  clear: both;
+  display: none;
+}
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-transform: uppercase;
+    background-color: #0099cc;
+}
+
+.navbar-custom li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #0099cc;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-custom a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover {
+    outline: 0;
+    color: rgba(255,255,255,.8);
+    background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+
+.navbar-custom .nav li.active a {
+    background-color: rgba(255,255,255,.3);
+}
+
+.navbar-custom .nav li.active a:hover {
+    color: #ccc;
+}
+
+@media(min-width:768px) {
+    .navbar-custom {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        background: #808080;
+    }
+}
