@@ -6,7 +6,7 @@
 * http://www.opensource.org/licenses/mit-license.php
 */
 
-/* Globals */
+/* Globals overwritting skeleton.css*/
 body {
   font-family: "Oxygen", "Open Sans", sans-serif;
 }
@@ -15,54 +15,117 @@ code {
   font-family: "Inconsolata", Courier, MonoSpace;
 }
 
-body a {
-  color: #222;
-}
-body a:hover {
-  color: #3d7bbf;
-}
+a {
+  color: #222; }
+a:hover {
+  color: #3d7bbf; }
 
 h4 {
   text-align: center;
   color: #222;
 }
 
-.button.button-primary, button.button-primary, input[type="submit"].button-primary, input[type="reset"].button-primary, input[type="button"].button-primary {
-  border-radius: 3px;
-  color: #222;
-  background-color: #fff;
-  border-color: #000;
-}
-.button.button-primary:hover , button.button-primary:hover , input[type="submit"].button-primary:hover , input[type="reset"].button-primary:hover , input[type="button"].button-primary:hover  {
-  color: #fff;
+/* Buttons
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  border-radius: 4px;
+  border: 1px solid #bbb;
+  cursor: pointer;
+  box-sizing: border-box; }
+.button:hover,
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover,
+.button:focus,
+button:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus,
+input[type="button"]:focus {
+  color: #333;
+  border-color: #888;
+  outline: 0; }
+.button.button-primary,
+button.button-primary,
+input[type="submit"].button-primary,
+input[type="reset"].button-primary,
+input[type="button"].button-primary {
+  color: #FFF;
   background-color: #3d7bbf;
-  border-color: #222;
+  border-color: #888; }
+.button.button-primary:hover,
+button.button-primary:hover,
+input[type="submit"].button-primary:hover,
+input[type="reset"].button-primary:hover,
+input[type="button"].button-primary:hover,
+.button.button-primary:focus,
+button.button-primary:focus,
+input[type="submit"].button-primary:focus,
+input[type="reset"].button-primary:focus,
+input[type="button"].button-primary:focus {
+  color: #000;
+  background-color: #fff;
+  border-color: #000; }
+
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
 }
 
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #3d7bbf;
+  outline: 0; }
+
 .hero {
-  background-image: url('../images/sydney_skyline.jpg');
-  background-size: cover;
+  /*background-image: url('../images/sydney_skyline.jpg');
+  background-size: cover;*/
+  background-image: url('../images/blueprintgrid.png');
   background-color: #3d7bbf;
 }
 
 #logotype {
     position: relative;
-    bottom: -11px;
-    width: 80%;
+    bottom: -7px;
+    width: 100%;
 }
+
 .callout {
   margin-top: 5%;
   margin-bottom: 5%;
   text-align: center;
+  font-size: 1.8rem;
 }
 
 .footer {
   white-space: nowrap;
-  /*background-size: cover;*/
-  background-color: #222;
+  background-image: url('../images/blueprintgrid.png');
+  background-color: #3d7bbf;
   text-align: right;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: white;
+  text-shadow: 3px 2px rgba(0, 0, 0, 0.6);
+  border-top: 3px solid #222;
 }
 
 .footer a {
@@ -70,24 +133,32 @@ h4 {
     margin-right: .9rem;
     margin-left: .9rem;
     color: white;
-    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
-
+}
+.footer a:hover {
+    text-decoration: underline;
+    color: white;
 }
 
 .email {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  margin-bottom: 1.1rem;
 }
 .phone {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  margin-bottom: 1.1rem;
 }
 .linkedin {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+  margin-bottom: 1.1rem;
 }
 
 
@@ -120,14 +191,14 @@ h4 {
     width: 50px;
     height: 50px;
   }
+  /*#logotype {
+      bottom: -11px;
+  }*/
 }
 
 
 /* Bigger than 750 */
 @media (min-width: 750px) {
-  .footer {
-    padding: .7rem 0 20rem;
-  }
   .callout {
     font-size: 2.6rem;
   }
@@ -151,22 +222,22 @@ h4 {
 /* Bigger than 1000 */
 @media (min-width: 1000px) {
   .callout {
-    font-size: 2.9rem;
+    font-size: 3.5rem;
   }
   .email {
-    background-size: 90px 90px;
-    width: 90px;
-    height: 90px;
+    background-size: 100px 100px;
+    width: 100px;
+    height: 100px;
   }
   .phone {
-    background-size: 90px 90px;
-    width: 90px;
-    height: 90px;
+    background-size: 100px 100px;
+    width: 100px;
+    height: 100px;
   }
   .phone {
-  background-size: 90px 90px;
-  width: 90px;
-  height: 90px;
+  background-size: 100px 100px;
+  width: 100px;
+  height: 100px;
   }
 }
 
