@@ -9,6 +9,7 @@
 /* Globals overwritting skeleton.css*/
 body {
   font-family: "Oxygen", "Open Sans", sans-serif;
+  background-image: url('../images/blueprintgrid.png');
 }
 
 code {
@@ -54,8 +55,8 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-  color: #FFF;
-  background-color: #3d7bbf;
+  color: #000;
+  background-color: #fff;
   border-color: #888; }
 .button.button-primary:hover,
 button.button-primary:hover,
@@ -67,9 +68,9 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-  color: #000;
-  background-color: #fff;
-  border-color: #000; }
+  color: #FFF;
+  background-color: #3d7bbf;
+  border-color: #888; }
 
 
 input[type="email"],
@@ -118,14 +119,11 @@ select:focus {
 }
 
 .footer {
-  white-space: nowrap;
-  background-image: url('../images/blueprintgrid.png');
-  background-color: #3d7bbf;
+  background-color: #222;
   text-align: right;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: white;
   text-shadow: 3px 2px rgba(0, 0, 0, 0.6);
-  border-top: 3px solid #222;
 }
 
 .footer a {
@@ -138,6 +136,8 @@ select:focus {
     text-decoration: underline;
     color: white;
 }
+
+.abn a:hover {text-decoration: none;}
 
 .email {
   display: block;
@@ -164,9 +164,6 @@ select:focus {
 
 /* Bigger than 550 */
 @media (min-width: 550px) {
-  .footer {
-    padding: .7rem 0 25rem;
-  }
   .callout {
     font-size: 2rem;
   }
@@ -191,9 +188,13 @@ select:focus {
     width: 50px;
     height: 50px;
   }
-  /*#logotype {
-      bottom: -11px;
-  }*/
+  .footer {
+    font-size: 1.5rem;
+    white-space: nowrap;
+  }
+  h4 {
+    font-size: 2.4rem;
+  }
 }
 
 
@@ -216,6 +217,9 @@ select:focus {
     background-size: 70px 70px;
     width: 70px;
     height: 70px;
+  }
+  h4 {
+    font-size: 3.1rem;
   }
 }
 

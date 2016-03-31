@@ -135,7 +135,7 @@
 <section id="home" class="hero">
   <div class="container">
     <div class="row">
-        <img id="logotype" src="images/hidden_logotype.svg" alt="Hidden Industries Logotype">
+        <img id="logotype" src="images/hidden_logotype_draft.svg" alt="Hidden Industries Logotype">
     </div>
   </div>
 </section>
@@ -150,15 +150,15 @@
   <div class="container">
     <div class="one-third column">
     <h4>Experienced</h4>
-    <p>With over 15 years industry experience, we draw on a comprehensive knowledge base. Hidden Industries, track record includes working with global technology agencies, internet service providers, universities, startups and local businesses.</p>
+    <p>With over 15 years industry experience, Hidden Industries leverages a comprehensive knowledge base and track record of creating then supporting solutions for global technology agencies, internet service providers, universities, startups and local businesses.</p>
     </div>
     <div class="one-third column">
     <h4>Independent</h4>
-    <p>As an independent agency, Hidden Industries examine all available options and connect you with the best ones for your needs. The goal is simple - happy clients using the right technologies and services.</p>
+    <p>As an independent agency, Hidden Industries examines all available options and connect you with the best ones for your needs. We also negotiate competitive pricing on your belhalf with our industry experience. The goal is simple - happy clients using the right technologies and services.</p>
     </div>
     <div class="one-third column">
     <h4>Connected</h4>
-    <p>With direct access and contacts working with the latest advances in digital services and technology, Hidden Industries helps you to tap into innovation to unlock value for you organisation.</p>
+    <p>Hidden Industries stays informed around emerging technologies and also up to date with existing marketplace solutions. This gives our clients access to understanding and experience of a wide network of tools and services with reduced internal investment and greater confidence.</p>
     </div>
   </div>
   <div class="container">
@@ -169,46 +169,62 @@
   <div class="container">
     <div class="u-full-width">
       <br/><br/><br/>
-      <h3>We deliver solutions, not sales pitches</h3>
-      <p>If you have an digital or technology related challenge, we can help.</p>
+      <h3>We deliver solutions, not a sales pitch</h3>
+      <p>Hidden Industries is a independent digital agency based in Sydney, Australia. We provide web development, technical design/support for IT systems and digital consultancy/training. We work directly with clients and businesses or contract work through trusted partners. If you have a digital or technology related challenge, we can help.</p>
     </div>
   </div>
-  <form autocomplete="on">
+  <form class="form-view" id="agile-form" action="https://hidden.agilecrm.com/formsubmit" method="GET">
+  <fieldset>
+    <div style="display: none; height: 0px; width: 0px;">
+    <input type="hidden" id="_agile_form_name" name="_agile_form_name" value="New web Enquiry ">
+    <input type="hidden" id="_agile_domain" name="_agile_domain" value="hidden">
+    <input type="hidden" id="_agile_api" name="_agile_api" value="jrinnqq7ulsgh5nu2t5bk6p951">
+    <input type="hidden" id="_agile_redirect_url" name="_agile_redirect_url" value="#">
+    <input type="hidden" id="_agile_form_id_tags" name="tags" value="">
+    </div>
     <div class="container">
       <div class="five columns">
             <label for="email">Your email</label>
-            <input class="u-full-width" type="email" placeholder="your@email.here" id="EmailInput" required>
+            <input class="u-full-width" id="email-4" name="email" type="email" placeholder="your@email.here" required="">
       </div>
       <div class="seven columns">
-        <label for="emailreason">Reason for contacting</label>
-        <select class="u-full-width" id="mailreason">
-          <option value="Development" selected>Web development</option>
-          <option value="Solution">Cloud hosting/migration support</option>
-          <option value="Solution">Server/Network design work</option>
-          <option value="SEO">SEO and online advertising</option>
-          <option value="Consultancy">General IT consultancy</option>
-          <option value="Suppliers">Vendor/Supplier negotiation</option>
-          <option value="Audit">Independent Technology review/audit</option>
-          <option value="Training">Training and personal development</option>
-          <option value="PenTesting">White hat penatration testing</option>
+        <label for="emailreason">What services are you interested in?</label>
+        <select class="u-full-width" id="interest" name="interest">
+          <option value="">Select</option>
+        	<option value="Web development" selected>Web development</option>
+        	<option value="Branding Design work">Branding Design work</option>
+        	<option value="Cloud hosting/migration support">Cloud hosting/migration support</option>
+        	<option value="Server/Network Infrastructure design">Server/Network Infrastructure design</option>
+        	<option value="SEO and online advertising">SEO and online advertising</option>
+        	<option value="General IT consultancy">General IT consultancy</option>
+        	<option value="Vendor/Supplier negotiation">Vendor/Supplier negotiation</option>
+        	<option value="Independent Technology review/audit">Independent Technology review/audit</option>
+        	<option value="Training and personal development">Training and personal development</option>
         </select>
       </div>
-      <label for="Message">Message</label>
-      <textarea class="u-full-width" placeholder="I'd like to meetup..." id="exampleMessage"></textarea>
+      <textarea class="u-full-width" placeholder="I'd like to meetup..." id="Message-5" name="note"></textarea>
       <input class="button-primary" type="submit" value="Send">
+      <span id="agile-error-msg"></span>
     </div>
+    </fieldset>
   </form>
+  <script type="text/javascript">
+  (function(a){var b=a.onload,p=false;if(p){a.onload="function"!=typeof b?function(){try{_agile_load_form_fields()}catch(a){}}:function(){b();try{_agile_load_form_fields()}catch(a){}}};a.document.forms["agile-form"].onsubmit=function(a){a.preventDefault();try{_agile_synch_form_v4()}catch(b){this.submit()}}})(window);
+  </script>
 </section>
 <section id="footer" class="footer">
   <div class="row">
     <div class="u-full-width">
-      <p>ABN: 23 612 417 465&nbsp;&nbsp;&nbsp;&nbsp;| <a href="#page-top">Top of page</a> | <a href="#source-code" id="view-source">Sourcecode</a></p>
-        <div id="source-code">
-			  <a href="#" id="x"><img src="images/close.svg" height="45" width="45" alt="close"></a>
-		    </div>
+      <a class="abn">ABN: 23 612 417 465</a>| <a href="#page-top">Top of page</a> | <a href="#source-code" id="view-source">Sourcecode</a>
     </div>
   </div>
 </section>
+<div class="row hero">
+  <div id="source-code">
+    <a href="#" id="x"><img src="images/close.svg" height="45" width="45" alt="close"></a>
+  </div>
+  <p>&nbsp;</p>
+</div>
 
 <!-- End Document
     Credits;
@@ -216,7 +232,7 @@
     Site boilerplate based on Skeleton by [Dave Gamache]( https://twitter.com/dhg ). Check out < http://getskeleton.com > for documentation and details.
     The main font used is the 'Oxygen' typeface family created as part of the KDE Project by [Vernon Adams]. I'm also using Inconsolata by [Raph Levien] for monospace (fixed width) code snipets. Both come under the SIL Open Font License, 1.1 and served via Google Fonts.
     Most of the graphics made in Autodesk Graphic http://graphic.com and hand coded. Also used Pixelmator for hero background comp http://www.pixelmator.com/mac/ because it's a great app and PS CC subscriptions blow hard. Also optimised graphics via http://www.jpegmini.com/ and https://tinypng.com
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+-->
 </body>
 <!--
     Micro Blog
