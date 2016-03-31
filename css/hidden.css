@@ -137,8 +137,6 @@ select:focus {
     color: white;
 }
 
-.abn a:hover {text-decoration: none;}
-
 .email {
   display: block;
   margin-left: auto;
