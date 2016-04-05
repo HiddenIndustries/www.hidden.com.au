@@ -98,6 +98,10 @@ select:focus {
   border: 1px solid #3d7bbf;
   outline: 0; }
 
+.required {
+  color: red;
+}
+
 .hero {
   /*background-image: url('../images/sydney_skyline.jpg');
   background-size: cover;*/
