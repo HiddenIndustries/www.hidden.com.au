@@ -1,0 +1,14 @@
+<?business card version="1.0" encoding="UTF-8"?>
+<contact name="Bill Rafferty">
+  <title job="Principle Consultant"/>
+  <a href='tel:+61455722811'>phone</a>
+  <a href='mailto:bill@hidden.com.au'>email</a>
+</contact>
+<online>
+  <a href="http://www.hidden.com.au">website</a>
+  <a href="http://www.linkedin.com/company/hidden-industries">LinkedIn</a>
+  <a href="https://twitter.com/PublicHidden">Twitter</a>
+  <a href="https://www.facebook.com/hidden.com.au/">Facebook</a>
+  <a href="https://google.com/+HiddenAu">Google+</a>
+</online>
+<ABN number="23612417465"/>

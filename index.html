@@ -44,9 +44,9 @@
   <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700|Oxygen:400,300,700' rel='stylesheet' type='text/css'>
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/hidden.css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/skeleton.css">
+  <link rel="stylesheet" href="/css/hidden.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <!-- GA tracking code -->
   <script>
@@ -83,20 +83,20 @@
    _agile_execute_web_rules();
   </script>
   <!-- Favicon overkill set -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon-180x180.png">
-  <link rel="icon" type="image/png" href="images/favicon/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="images/favicon/android-chrome-192x192.png" sizes="192x192">
-  <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="images/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="/images/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="/images/favicon/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="/images/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/images/favicon/favicon-16x16.png" sizes="16x16">
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
   <!-- Primary Page Layout -->
@@ -108,7 +108,7 @@
                   <i class="fa fa-bars">Nav</i>
               </button>
               <a class="navbar-brand page-scroll" href="#page-top">
-                  <i class="fa"><img src="images/hidden_logo.svg" width="60px" alt="Hidden Industries Logo"></i>
+                  <i class="fa"><img src="/images/hidden_logo.svg" width="60px" alt="Hidden Industries Logo"></i>
               </a>
           </div>
 
@@ -135,7 +135,7 @@
 <section id="home" class="hero">
   <div class="container">
     <div class="row">
-        <img id="logotype" height="20%" src="images/hidden_logotype_draft.svg" alt="Hidden Industries Logotype">
+        <img id="logotype" height="20%" src="/images/hidden_logotype_draft.svg" alt="Hidden Industries Logotype">
     </div>
   </div>
 </section>
@@ -143,7 +143,7 @@
   <div class="container">
     <div class="row">
         <p class="callout">Connecting you to the technology, digital services and support needed for success</p>
-        <p style="text-align:center;">We provide web development, brand design, technical implementation and support for IT systems, cloud migration solutions, digital training and consultancy</p>
+        <p class="callout-copy">We provide web development, brand design, technical implementation and support for IT systems, cloud migration solutions, digital training and consultancy</p>
     </div>
   </div>
 </section>
@@ -223,7 +223,7 @@
 </section>
 <div class="row hero">
   <div id="source-code">
-    <a href="#" id="x"><img src="images/close.svg" height="45" width="45" alt="close"></a>
+    <a href="#" id="x"><img src="/images/close.svg" height="45" width="45" alt="close"></a>
   </div>
   <p>&nbsp;</p>
 </div>
@@ -238,6 +238,17 @@
 </body>
 <!--
     Micro Blog
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~¬
+    8th, Sep 2016:
+    Just a minor update to change relative URL format so that the
+    web.archive.org would correctly display my site. I'm a
+    big fan or this resource, but it was translating
+    img src="images/hidden_logo.svg" into;
+    http://images/hidden_logo.svg so I've changed to;
+    img src="/images/hidden_logo.svg" into;
+    http://www.hidden.com.au/images/hidden_logo.svg
+    Both are valid but the later means the WayBackMachine is
+    happy.
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~¬
     22nd, March 2016:
     Relaunching the site to promote Hidden Industries. I thought

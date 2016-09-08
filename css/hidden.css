@@ -103,8 +103,6 @@ select:focus {
 }
 
 .hero {
-  /*background-image: url('../images/sydney_skyline.jpg');
-  background-size: cover;*/
   background-image: url('../images/blueprintgrid.png');
   background-color: #3d7bbf;
 }
@@ -120,6 +118,9 @@ select:focus {
   margin-bottom: 2%;
   text-align: center;
   font-size: 1.8rem;
+}
+.callout-copy {
+  text-align: center;
 }
 
 .footer {
