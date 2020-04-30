@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+		<title>Hidden Industires Easter Egg</title>
+    	<style class="csscreations">
+            /*basic reset*/
+            * {margin: 0; padding: 0;}
+            /*adding a black bg to the body to make things clearer*/
+            body {
+                background: black;
+            }
+            canvas {
+                display: block;
+            }
+        </style>
+    </head>
+	<body>
+    	<canvas id="canvas" height="640" width="480"></canvas>
+        <script>
+(function(){
+    var Judoka = function (canvas, fontSize) {
+        this.ascii = [
+            "                                                             ",
+            "    ##    ##  ##  ######   ######   ######  ####    ##       ",
+            "    ##    ##  ##  ##   ##  ##   ##  ##      ## ##   ##       ",
+            "    ########  ##  ##   ##  ##   ##  ####    ##  ##  ##       ",
+            "    ##    ##  ##  ##   ##  ##   ##  ##      ##   ## ##       ",
+            "    ##    ##  ##  ######   ######   ######  ##    ####.com.au",
+            "                                                             "
+        ];
+        this.mask = [];
+
+        this.canvas = canvas;
+        this.fontSize = fontSize;
+
+        this.ctx = canvas.getContext("2d");
+	    this.ctx.font = fontSize + "px courier new";
+
+        this.width = this.ctx.measureText(this.ascii[0]).width;
+        this.height = this.ascii.length * fontSize;
+
+        this.x = (canvas.width - this.width) / 2;
+        this.y = (canvas.height - this.height) / 2;
+
+        this.prep_ascii = [];
+        for (var l = 0; l < this.ascii.length; l++) {
+            var startSpace = this.ascii[l].match(/^\s*/)[0];
+            var offset = this.ctx.measureText(startSpace).width;
+            var cleanStr = this.ascii[l].replace(/^\s*/g,'').replace(/\s*$/g,'');
+            var cleanWidth = this.ctx.measureText(cleanStr).width;
+
+            this.prep_ascii.push({
+                offset: offset,
+                s: cleanStr,
+                w: cleanWidth
+            });
+        }
+    }
+
+    Judoka.prototype.uncover_random_line = function () {
+        this.mask[Math.floor(Math.random()*this.ascii.length)] = true;
+    }
+
+    Judoka.prototype.draw = function () {
+        for (var l = 0; l < this.ascii.length; l++) {
+            if (this.mask[l] != true)
+                continue;
+
+            this.ctx.beginPath();
+            this.ctx.fillStyle = "rgba(0, 0, 0, 0.3)";
+            this.ctx.rect(this.x + this.prep_ascii[l].offset,
+                          this.y + (l - 1)*this.fontSize,
+                          this.prep_ascii[l].w,
+                          this.fontSize);
+            this.ctx.fill();
+
+            this.ctx.beginPath();
+	        this.ctx.fillStyle = "rgba(255, 255, 255, 1.0)";
+		    this.ctx.fillText(this.ascii[l], this.x, this.y + l*this.fontSize);
+        }
+    }
+
+    var Drop = function (x, canvas, ctx, fontSize) {
+        /* A pool of characters that are used for the threads */
+        var charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789七八下左右中大小月日年早木林山川土空田天生花草虫犬人名女男子目" +
+                      "ÁïÄÁïÅÁïÇÁïÉÁïÑÁïÖÁïÜÁïáÁïàÁïâÁïäÁïãÁïåÁïçÁïéÁïèÁïêÁïë"; //Áî∞Áî±Áî≤Áî≥Áî¥ÁîµÁî∂Áî∑Áî∏ÁîπÁî∫ÁîªÁîºÁîΩÁîæÁîø
+        this.charset = charset.split("");
+
+        this.canvas = canvas;
+        this.ctx = ctx;
+        this.fontSize = fontSize;
+
+        this.x = x;
+        this.y = Math.floor(Math.random()*(canvas.height/fontSize));
+
+        this.last_char = this.random_character();
+        this.speed = Math.floor(Math.random()*3) + 1; /* cycles per move */
+
+        this.cycle = 0
+    }
+
+    Drop.prototype.random_character = function () {
+        return this.charset[Math.floor(Math.random()*this.charset.length)];
+    }
+
+    Drop.prototype.random_speed = function () {
+        if (Math.random() > 0.80)
+            return 'slow';
+
+        return 'normal';
+    }
+
+    Drop.prototype.draw = function () {
+        this.cycle = ++this.cycle % 2;
+        if (this.speed === 'slow' && this.cycle == 1)
+            return;
+
+        /* Make the previous character orange*/
+	    this.ctx.fillStyle = "#000";
+		this.ctx.fillText(this.last_char, this.x*this.fontSize, (this.y - 1)*this.fontSize);
+
+	    this.ctx.fillStyle = "#00ff41";
+		this.ctx.fillText(this.last_char, this.x*this.fontSize, (this.y - 1)*this.fontSize);
+
+        this.last_char = this.random_character();
+
+	    this.ctx.fillStyle = "#eee";
+		this.ctx.fillText(this.last_char, this.x*this.fontSize, this.y*this.fontSize);
+
+		if(this.y*this.fontSize > this.canvas.height && Math.random() > 0.975) {
+			this.y = 0;
+            this.speed = this.random_speed();
+        }
+
+		this.y++;
+    }
+
+
+var canvas = document.getElementById("canvas");
+canvas.height = window.innerHeight;
+canvas.width = window.innerWidth;
+ctx = canvas.getContext("2d");
+
+var fontSize = 12;
+
+var elapsed = 0; /* seconds */
+var dt = 53; /* miliseconds */
+var cycle = 0;
+var cycleLength = 4;
+
+var cols = canvas.width/fontSize;
+var rows = canvas.height/fontSize;
+
+var drops = [];
+for(var x = 0; x < cols; x++)
+    drops.push(new Drop(x, canvas, ctx, fontSize));
+
+var judoka = new Judoka(canvas, fontSize);
+
+//drawing the characters
+function animation()
+{
+    elapsed += dt/1000;
+
+	//Black BG for the canvas
+	//translucent BG to show trail
+	ctx.fillStyle = "rgba(0, 0, 0, 0.03)";
+	ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+	ctx.font = fontSize + "px courier new";
+
+	//looping over drops
+	for (var i = 0; i < drops.length; i++)
+        drops[i].draw();
+
+    /* draw judoka */
+    if (elapsed > 5) {
+        judoka.uncover_random_line();
+        judoka.draw();
+    }
+}
+
+setInterval(animation, dt);
+
+}());
+        </script>
+    </body>
+</html>
