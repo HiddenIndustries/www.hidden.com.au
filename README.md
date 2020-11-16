@@ -1,2 +1,2 @@
-# hidden.com.au
+# www.hidden.com.au
 Public Corporate site for Hidden Industries
