@@ -1,4 +1,4 @@
-#www.hidden.com.au
+# [www.hidden.com.au](https://www.hidden.com.au/)
 This is the corporate site for Hidden Industries ABN# 23 612 417 465
 
 Hidden Industries is a independent digital agency based in Sydney, Australia. We provide web development, technical design/support for IT systems and digital consultancy/training. We work directly with clients and businesses or contract work through trusted partners. If you have a digital or technology related challenge, we can help.
